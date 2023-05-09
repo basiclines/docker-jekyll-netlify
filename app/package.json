@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@lhci/cli": "*",
+    "netlify-cli": "*",
+    "npm-run-all": "*",
+    "parcel": "*",
+    "parcel-resolver-ignore": "*",
+    "tree-node-cli": "*"
+  }
+}
