@@ -17,10 +17,23 @@ You can always overwrite those files and trigger your very own packages install.
 
 ## Gemfile packages
 
+When re-downloading packages in your environment, make sure to indicate this cache folder:
+
+```
+bundle config set --local path 'vendor'
+bundle install
+```
+
 * Jekyll (4.x)
 * Jekyll Feed
 
 ## Package.json packages
+
+When re-downloading packages in your environment, make sure to indicate this cache folder:
+
+```
+yarn install --cache-folder .yarn-cache
+```
 
 * netlify-cli: Manages your netlify site.
 * lhci: Performs lighthouse checks.
