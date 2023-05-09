@@ -34,9 +34,13 @@ You can always overwrite those files and trigger your very own packages install.
 docker run -d -p 8088:80 --name jekyll-netlify basiclines/jekyll-netlify
 ```
 
-# Building & Publishing
+## Building & Publishing
 
 ```
 docker build -t basiclines/jekyll-netlify:latest -f Dockerfile .
 docker push basiclines/jekyll-netlify:latest
 ```
+
+## Contributing
+
+https://github.com/basiclines/docker-jekyll-netlify
