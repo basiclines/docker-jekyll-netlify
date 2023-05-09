@@ -35,11 +35,11 @@ When re-downloading packages in your environment, make sure to indicate this cac
 yarn install --cache-folder .yarn-cache
 ```
 
-* netlify-cli: Manages your netlify site.
-* lhci: Performs lighthouse checks.
-* parcel: Bundles your site assets.
-* npm-run-all: Performs parallel and sequential taks on node.
-* tree-node-cli: Prints directories as a tree-like output.
+* **netlify-cli:** Manages your netlify site.
+* **lhci:** Performs lighthouse checks.
+* **parcel:** Bundles your site assets.
+* **npm-run-all:** Performs parallel and sequential taks on node.
+* **tree-node-cli:** Prints directories as a tree-like output.
 
 ## Running
 
