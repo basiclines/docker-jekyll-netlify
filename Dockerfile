@@ -9,5 +9,6 @@ RUN gem install bundler
 COPY app ./app
 WORKDIR /app
 RUN bundle config set --local path 'vendor'
+RUN yarn config set .yarn-cache
 RUN bundle install
-RUN yarn install --cache-folder .yarn-cache
+RUN yarn install
