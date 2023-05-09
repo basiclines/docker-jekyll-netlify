@@ -9,6 +9,7 @@ Useful image if you build your site with Jekyll inside your very own CI/CD and y
 * node 18.x
 * yarn
 * rsync
+* deno
 
 ## /app directory
 
@@ -40,6 +41,11 @@ yarn install --cache-folder .yarn-cache
 * **parcel:** Bundles your site assets.
 * **npm-run-all:** Performs parallel and sequential taks on node.
 * **tree-node-cli:** Prints directories as a tree-like output.
+
+## About Deno
+
+Netlify CLI uses Deno for bundling Edge Functions.
+As Deno does not provide yet arm64 binaries, we should relly on a custom install script. [More info](https://news.ycombinator.com/item?id=34768122)
 
 ## Running
 
