@@ -1,6 +1,6 @@
 # Jekyll + Netlify
 
-Useful image if you build your site with Jekyll inside your very own CI/CD and you deploy the site using Netlify CLI.
+linux/amd64 image for building your site with Jekyll inside your very own CI/CD and you deploy the site using Netlify CLI.
 
 ## Main dependencies
 
@@ -50,13 +50,13 @@ As Deno does not provide yet arm64 binaries, we should relly on a custom install
 ## Running
 
 ```
-docker run -d -p 8088:80 --name jekyll-netlify basiclines/jekyll-netlify
+docker run --platform linux/amd64 -d -p 8088:80 --name jekyll-netlify basiclines/jekyll-netlify
 ```
 
 ## Building & Publishing
 
 ```
-docker build -t basiclines/jekyll-netlify:latest -f Dockerfile .
+docker build -platform linux/amd64 -t basiclines/jekyll-netlify:latest -f Dockerfile .
 docker push basiclines/jekyll-netlify:latest
 ```
 
