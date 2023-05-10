@@ -4,12 +4,12 @@ linux/amd64 image for building your site with Jekyll inside your very own CI/CD 
 
 ## Main dependencies
 
-* ruby 3.0 (based on Ubuntu image)
-* bundler
-* node 18.x
-* yarn
-* rsync
-* deno
+* **ruby 3.0:** Based on Ubuntu image.
+* **bundler:** Needed for Jekyll.
+* **node 18.x:** Needed for common tasks/packages.
+* **yarn:**: Needed for common tasks/packages.
+* **rsync:**: Needed for moving assets in CI/CD to /app folder.
+* **deno:**: Needed for netlify-cli (edge functions bundling).
 
 ## /app directory
 
@@ -41,11 +41,6 @@ yarn install --cache-folder .yarn-cache
 * **parcel:** Bundles your site assets.
 * **npm-run-all:** Performs parallel and sequential taks on node.
 * **tree-node-cli:** Prints directories as a tree-like output.
-
-## About Deno
-
-Netlify CLI uses Deno for bundling Edge Functions.
-As Deno does not provide yet arm64 binaries, we should relly on a custom install script. [More info](https://news.ycombinator.com/item?id=34768122)
 
 ## Running
 
