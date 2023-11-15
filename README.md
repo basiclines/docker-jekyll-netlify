@@ -51,7 +51,7 @@ docker run --platform linux/amd64 -d -p 8088:80 --name jekyll-netlify basiclines
 ## Building & Publishing
 
 ```
-docker build -platform linux/amd64 -t basiclines/jekyll-netlify:latest -f Dockerfile .
+docker build --platform linux/amd64 -t basiclines/jekyll-netlify:latest -f Dockerfile .
 docker push basiclines/jekyll-netlify:latest
 ```
 
